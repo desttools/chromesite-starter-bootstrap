@@ -1,0 +1,9 @@
+{
+  "siteName": "My Site",
+  "domain": "",
+  "paragraphMode": "p",
+  "activeTemplate": "template.html",
+  "cssFramework": "bootstrap5",
+  "deploymentTarget": "local",
+  "deployDirectory": "dist"
+}
