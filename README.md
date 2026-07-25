@@ -56,7 +56,7 @@ build. Run `node .chromesite/compose.js --help` for all options.
 ├── index.html ...              ← page content (fragments — see below)
 ├── 404.html (don't edit)       ← default 404 page needed for Cloudflare and Netlify
 ├── assets/                     ← images referenced by pages/template
-├── elements/                   ← favicons, touch icons, manifest.json
+├── elements/                   ← favicons, template backgrounds, shims
 ├── scripts/
 │   ├── styles.css              ← site-wide custom CSS (layered on top
 │   │                              of the chosen cssFramework)
@@ -161,13 +161,21 @@ full current list with real markup — it's regenerated every time the
 project is opened in the editor, so check it rather than this README for
 the up-to-date inventory.
 
-### Favicons
+### Template Elements and Favicons
 
-`elements/` holds a full favicon/touch-icon set (Apple, Android, MS tile
+`elements/` is intended to hold template pieces you don't want ChromeSite
+to make available to admin users (i.e. favicons, backgrounds, shims, etc.)
+
+`elements/` can hold a full favicon/touch-icon set (Apple, Android, MS tile
 icons) plus `manifest.json` and `browserconfig.xml`, already wired up from
-`.chromesite/templates/template.html`. Regenerate this set for your own
-brand and drop the files in with the same names, or edit the template's
-`<link>` tags if you change the set's naming/sizes.
+`.chromesite/templates/template.html` in this case. Regenerate this set 
+for your own brand and drop the files in with the same names, or edit the 
+template's `<link>` tags if you change the set's naming/sizes.
+
+The starter template uses the format from the 
+[Favicon Generator](https://www.favicon-generator.org/), but any will work. 
+ChromeSite doesn't deploy a favicon.ico at the site root, so you will need 
+to specify favicon links in your template.
 
 ## Do not hand-edit
 
