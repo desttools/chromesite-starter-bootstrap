@@ -5,6 +5,9 @@ A clean starter template for building a website with the
 the folder in the extension, and start editing — or fork it as the base for
 your own reusable template.
 
+You can preview this starter template online at
+[CloudFlare Pages](https://cs-startersite-bootstrap.pages.dev/)
+
 This repo is content + config, not a buildable app. There's no bundler, no
 `npm install`, no framework of its own. The only tooling is a small Node
 script (`.chromesite/compose.js`) that lets you preview pages headlessly,
