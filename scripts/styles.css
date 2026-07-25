@@ -70,12 +70,46 @@ h6 {
   position: relative;
 }
 
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.size12 {font-size: 12px;}
+.size14 {font-size: 14px;}
+.size16 {font-size: 16px;}
+.size18 {font-size: 18px;}
+.size20 {font-size: 20px;}
+.size22 {font-size: 22px;}
+.size24 {font-size: 24px;}
+.size26 {font-size: 26px;}
+.size28 {font-size: 28px;}
+.size30 {font-size: 30px;}
+.size32 {font-size: 32px;}
+.size34 {font-size: 34px;}
+.size36 {font-size: 36px;}
+
 
 /* HEADER AND NAV */
 .cs-menu-header {
     margin-left: auto;
 }
 
+
+/* HEADER HERO */
+
+.header-hero {
+  padding: 260px 0 280px;
+  background-image: url(/assets/workspace.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.header-hero .hero-title {
+  font-size: 48px;
+}
 
 
 /* PRICING BOX */
@@ -218,4 +252,43 @@ textarea.form-control {
 .post-footer a:hover,
 .post-footer a:focus {
     color: rgba(255, 255, 255, 1);
+}
+
+
+/*  BOOTSTRAP RESPONSIVE BREAKPOINTS
+X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    
+
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    
+
+}
+
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    
+
+}
+
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    
+
+}
+
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+    
+
 }

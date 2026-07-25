@@ -150,5 +150,9 @@ Insert via the editor's 🧩 Blocks dialog, or copy the markup directly into a p
 
 ## Custom (`.chromesite/blocks/`)
 
+- **About** — `.chromesite/blocks/about.html`
 - **Contact Us** — `.chromesite/blocks/contact-us.html`
+- **Articles** — `.chromesite/blocks/articles.html`
+- **Header Hero** — `.chromesite/blocks/header-hero.html`
 - **Pricing Block** — `.chromesite/blocks/pricing-block.html`
+- **Cta** — `.chromesite/blocks/cta.html`

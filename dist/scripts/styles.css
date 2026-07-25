@@ -41,33 +41,6 @@
 
 }
 
-[data-bs-theme=dark] {
-  --bs-gray-100: #141c26;
-  --bs-gray-200: #18222e;
-  --bs-gray-300: #1a2532;
-  --bs-gray-400: #ecf0ff;
-  --bs-gray-500: #adb5bd;
-  --bs-gray-600: #bfc8e2;
-  --bs-gray-700: #ced4da;
-  --bs-gray-800: #eff2f7;
-  --bs-gray-900: #f3f6f9;
-  --bs-body-color: #f3f6f9;
-  --bs-body-bg: #141c26;
-  --bs-secondary-bg: #1a2532;
-  --bs-border-color: #1a2532;
-  --bs-dark: #f3f6f9;
-  --bs-dark-rgb: to-rgb(#f3f6f9);
-  --bs-light: #18222e;
-  --bs-white: #1a2532;
-  --bs-form-bg: #1a2532;
-  --bs-light-rgb: to-rgb(#18222e);
-  --bs-white-rgb: to-rgb(#1a2532);
-  --bs-footer-bg: #101822;
-  --bs-footer-alt-bg: #141c26;
-  --bs-bg-white: #18222e;
-  --bs-text-color: #adb5bd;
-}
-
 
 
 /* OVERALL CLASSES */
@@ -97,12 +70,126 @@ h6 {
   position: relative;
 }
 
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.size12 {font-size: 12px;}
+.size14 {font-size: 14px;}
+.size16 {font-size: 16px;}
+.size18 {font-size: 18px;}
+.size20 {font-size: 20px;}
+.size22 {font-size: 22px;}
+.size24 {font-size: 24px;}
+.size26 {font-size: 26px;}
+.size28 {font-size: 28px;}
+.size30 {font-size: 30px;}
+.size32 {font-size: 32px;}
+.size34 {font-size: 34px;}
+.size36 {font-size: 36px;}
+
 
 /* HEADER AND NAV */
 .cs-menu-header {
     margin-left: auto;
 }
 
+
+/* HEADER HERO */
+
+.header-hero {
+  padding: 260px 0 280px;
+  background-image: url(/assets/workspace.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.header-hero .hero-title {
+  font-size: 48px;
+}
+
+
+/* PRICING BOX */
+
+.pricing-box {
+  box-shadow: 0 3px 12px rgba(6, 11, 47, 0.06);
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--bs-secondary-bg);
+}
+.pricing-box .pricing-icon-bg {
+  background: rgba(90, 79, 220, 0.12);
+  color: #5a4fdc;
+  display: block;
+  height: 80px;
+  width: 80px;
+  font-size: 48px;
+  line-height: 1.6em;
+  margin: 0 auto;
+  border-radius: 20%;
+  box-shadow: 0 0 0 7px rgba(90, 79, 220, 0.03);
+  transition: all 0.5s;
+}
+.pricing-box .pricing-item li {
+  padding: 10px 0;
+}
+.pricing-box .pr-btn {
+  position: relative;
+  z-index: 1;
+}
+.pricing-box:hover .pricing-icon-bg, .pricing-box.active .pricing-icon-bg {
+  background-color: #5a4fdc;
+  box-shadow: 0 0 0 7px rgba(90, 79, 220, 0.06);
+  color: #fff;
+  border-radius: 20%;
+}
+
+
+/* CONTACT US BLOCK */
+
+.form-control:focus {
+  box-shadow: none;
+  background-color: #fbfafd;
+  border-color: #ced4da;
+}
+
+textarea.form-control {
+  height: auto !important;
+}
+
+.custom-form .form-group {
+  margin-bottom: 1rem;
+}
+.custom-form label {
+  margin-bottom: 10px;
+}
+.custom-form .alert-warning {
+  padding: 10px;
+}
+
+.form-control {
+  padding: 8px 10px;
+  font-size: 14px;
+  height: 40px;
+  background-color: rgba(59, 57, 80, 0.01);
+  border: 1px solid rgba(158, 156, 185, 0.3);
+}
+.form-control::-moz-placeholder {
+  color: #b0aec6;
+  font-size: 14px;
+}
+.form-control::placeholder {
+  color: #b0aec6;
+  font-size: 14px;
+}
+
+.contact-loader {
+  display: none;
+}
 
 
 /* FOOTER */
@@ -165,4 +252,43 @@ h6 {
 .post-footer a:hover,
 .post-footer a:focus {
     color: rgba(255, 255, 255, 1);
+}
+
+
+/*  BOOTSTRAP RESPONSIVE BREAKPOINTS
+X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    
+
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    
+
+}
+
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    
+
+}
+
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    
+
+}
+
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+    
+
 }
